@@ -19,7 +19,7 @@ const Timer = () => {
 	const [today, setToday] = useState(null);
 	let timer = useRef(null);
 	const updateTime = () => {
-		let now = new Date();
+		let now = new Date(1676392713922);
 		let day = now.getDay();
 		let date = now.getDate();
 		let month = now.getMonth();
