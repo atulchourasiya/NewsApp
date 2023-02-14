@@ -45,7 +45,7 @@ const Timer = () => {
 			<h6>
 				{today &&
 					`Current Time:- ${today.day} ${today.date}-${today.month}-${today.year} ${
-						today.hour % 12 < 10 ? `0${today.hour % 12}` : `${today.hour}`
+						today.hour % 12 < 10 ? `0${today.hour % 12}` : `${today.hour % 12}`
 					}-${today.min}-${today.sec} ${today.hour >= 12 ? 'PM' : 'AM'}`}
 			</h6>
 		</div>
