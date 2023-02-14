@@ -42,7 +42,7 @@ const NewsTable = (props) => {
 
 			{props.delete && (
 				<button type='button' className='btn btn-info fw-normal'>
-					Total Published News Count: {news?.length}
+					Total Published News Count: {news ? news.length : 0}
 				</button>
 			)}
 		</div>

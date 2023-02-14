@@ -19,7 +19,7 @@ const Timer = () => {
 	const [today, setToday] = useState(null);
 	let timer = useRef(null);
 	const updateTime = () => {
-		let now = new Date();
+		let now = new Date(1676392713922);
 		let day = now.getDay();
 		let date = now.getDate();
 		let month = now.getMonth();
@@ -45,7 +45,7 @@ const Timer = () => {
 			<h6>
 				{today &&
 					`Current Time:- ${today.day} ${today.date}-${today.month}-${today.year} ${
-						(today.hour % 12) < 10 ? `0${(today.hour % 12)}` : `${(today.hour % 12)}`
+						(today.hour % 12) < 10 ? `0${today.hour % 12}` : today.hour % 12
 					}-${today.min}-${today.sec} ${today.hour >= 12 ? 'PM' : 'AM'}`}
 			</h6>
 		</div>
